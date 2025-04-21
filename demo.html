@@ -292,28 +292,28 @@
         </div>
         <!-- Services Page - Left-aligned titles and subtitles -->
         <div id="services" class="page">
-            <button class="prev-button">↑</button>
-            <div class="services-content">
-                <div class="service-item">
-                    <h3>Why Should any Realtor, or a Real estate agent, have a good online or social media presence?</h3>
-                    <p>As a Realtor, and an agent in realty, as noticed, if you dont have more than 10 years of indutry knowledge, people tend to show a lot of suspicion</p>
-                    <li>maybe a mom wants to find his son a stable home dor his foreign university? she sees your videos, your words, what not!</li>
-                    <li>a couple wants to buy a home for their new life? wait, they just saw your video, boom! doubts gone! and higher chances of them contacting you</li>
-                </div>
-                <div class="service-item">
-                    <h3>Automation</h3>
-                    <p>WHY ? An A-I calling agent to answer call, specifically trained for your company and products? potentially reducing time wasters, who have a 90% chance of not buying the property, but still they needs to be served. hence in a good way, and at-least 90% of fulfillment.</p>
-                <p>ON-the-SPOT email replies, whatsapp replies, a special client database on excel, fully automated</p>
-                <li>an Ai sales chatbot, working and answering questions 24/7, to any country, any person</li>
-                <li>Automating Calls {primary job is to train the ai bot which answers the calls with latest properties available, no price disclosure, all qualities and features of the estate/property trained to it}</li>
-                </div>
-                <div class="service-item">
-                    <h3>Personalised, a company reflecting WEBSITE</h3>
-                    <p>This is not about, clear concise catalogues, or about your niche, its more about credibilty, you showcase vastness on the website, more than you can say it from your mouth. </p>
-                </div>
-            </div>
-            <button class="next-button">↓</button>
+    <button class="prev-button">↑</button>
+    <div class="services-content">
+        <div class="service-item">
+            <h3>Why Should a Realtor or Real Estate Agent Have a Strong Online/Social Media Presence?</h3>
+            <p>As a realtor or agent, you may notice that without over a decade of industry experience, clients often approach you with skepticism. A professional online presence helps bridge this trust gap.</p>
+            <li>A mother looking to secure stable housing for her son studying abroad might come across your videos or posts—suddenly, trust is built!</li>
+            <li>A couple preparing to buy their first home could discover your content, eliminating doubts and prompting them to reach out to you directly.</li>
         </div>
+        <div class="service-item">
+            <h3>Automation Solutions</h3>
+            <p>Why use AI? An AI assistant trained specifically for your business can handle inquiries about properties, filtering out 90% of unqualified leads while providing instant, accurate responses to serious buyers.</p>
+            <p>Automated email replies, WhatsApp responses, and a centralized client database (e.g., Excel) ensure seamless 24/7 communication.</p>
+            <li>An AI chatbot that answers property-related questions 24/7 for international/domestic clients</li>
+            <li>Call automation that trains AI to describe property features (without pricing) and qualify leads</li>
+        </div>
+        <div class="service-item">
+            <h3>Professional, Brand-Aligned Website</h3>
+            <p>This isn't just about listing properties or defining your niche—it's about credibility. A well-designed website showcases the full scope of your services more effectively than any sales pitch.</p>
+        </div>
+    </div>
+    <button class="next-button">↓</button>
+</div>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -363,6 +363,22 @@
             // Welcome alert
             alert("Welcome to our real estate services! Use spacebar, next/previous buttons, or navigation links to explore.");
         });
+     let lastScrollPosition = 0;
+
+window.addEventListener('scroll', () => {
+  const currentScrollPosition = window.pageYOffset;
+  const header = document.querySelector('header'); // Update selector if needed
+
+  if (currentScrollPosition > lastScrollPosition) {
+    // Scrolling down - hide header
+    header.style.transform = 'translateY(-100%)';
+  } else {
+    // Scrolling up - show header
+    header.style.transform = 'translateY(0)';
+  }
+
+  lastScrollPosition = currentScrollPosition;
+});
     </script>
 </body>
 </html> 
