@@ -6,5 +6,12 @@
         { "key": "Content-Type", "value": "application/xml" }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://devwaghela.vercel.app/",
+      "permanent": true
+    }
   ]
 }
