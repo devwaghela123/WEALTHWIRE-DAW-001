@@ -10,6 +10,12 @@
   "redirects": [
     {
       "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "aboutdevwaghela.wealthwire.me"
+        }
+      ],
       "destination": "https://devwaghela.vercel.app/",
       "permanent": true
     }
