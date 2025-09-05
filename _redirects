@@ -1,0 +1,8 @@
+# Remove .html extension
+/demo /demo.html 200
+/ /index.html 200
+
+# Redirect .html to clean URLs
+/demo.html /demo 301
+/index.html / 301
+
